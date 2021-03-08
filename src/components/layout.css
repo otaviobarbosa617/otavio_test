@@ -6,7 +6,7 @@ html {
   overflow-y: scroll;
 }
 body {
-  margin: 0;
+  margin: 0 auto;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: hsla(0, 0%, 0%, 0.8);
@@ -53,6 +53,7 @@ template {
 a {
   background-color: transparent;
   -webkit-text-decoration-skip: objects;
+  text-decoration: none;
 }
 a:active,
 a:hover {
@@ -590,8 +591,28 @@ pre tt:before,
 pre tt:after {
   content: "";
 }
+
+.menu {
+  background-color: black;
+  padding-top: 10px;
+  color: white;
+}
+
+.menu ul{
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+}
+
+.menu ul li a{
+  color: white;
+  text-decoration: none;
+}
+
 @media only screen and (max-width: 480px) {
   html {
     font-size: 100%;
   }
 }
+
+/* TODO MEDIA FOR MENU */
