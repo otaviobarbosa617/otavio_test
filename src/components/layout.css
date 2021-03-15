@@ -25,7 +25,6 @@ details,
 figcaption,
 figure,
 footer,
-header,
 main,
 menu,
 nav,
@@ -595,34 +594,10 @@ pre tt:after {
   content: "";
 }
 
-ul{
-  list-style-type: none;
-}
-
-ul li {
-  float: left;
-}
-
-ul li a{
-  color: black;
-  text-decoration: none;
-  padding: 10px;
-}
-
-ul li a:hover{
-  background-color: black;
-  color: white;
-}
-
-.active {
-  background-color: black;
-  color: white;
-}
 
 @media only screen and (max-width: 480px) {
   html {
     font-size: 100%;
   }
 }
-
 /* TODO MEDIA FOR MENU */
