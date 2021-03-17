@@ -1,0 +1,24 @@
+/* .image-container {
+    text-align: center;
+    margin: 150px;
+} */
+
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    grid-auto-rows: minmax(300px, auto);
+    grid-gap: 20px;
+    margin: 0 auto;
+    max-width: 1000px;
+    /* padding: 0 32px; */
+}
+
+.image-item:nth-child(5) {
+    grid-column-end: span 2;
+}
+
+.image-item:nth-child(9) {
+    grid-column-end: span 3;
+    grid-row-start: 4;
+}
+

@@ -28,11 +28,13 @@ const Layout = ({ children }) => {
       <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
       <Container fluid="md">
         <main>{children}</main>
+        <Container>
         <footer>
           © {new Date().getFullYear()}, Built by <a href="https://github.com/otaviobarbosa617">Otavio</a> using
           {` `}
           <a href="https://www.gatsbyjs.com" target="_blank" rel="noreferrer">Gatsby</a>
         </footer>
+        </Container>
       </Container>
     </>
   )
