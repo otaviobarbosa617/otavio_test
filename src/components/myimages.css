@@ -5,15 +5,11 @@
     grid-gap: 20px;
     margin: 0 auto;
     max-width: 1200px;
+    width: 100%;
 }
 
-.image-item:nth-child(5) {
+.image-item:nth-child(3n+0) {
     grid-column-end: span 2;
-}
-
-.image-item:nth-child(9) {
-    grid-column-end: span 2;
-    grid-row-start: 4;
 }
 
 @media (max-width: 767px) {
@@ -24,6 +20,10 @@
         grid-gap: 10px;
         margin: 0 auto;
         max-width: 1000px;
+    }
+
+    .image-item:nth-child(3n+0) {
+        grid-column-end: span 1;
     }
 
 }

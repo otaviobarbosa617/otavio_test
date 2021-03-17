@@ -73,6 +73,7 @@ const Contact = () => (
         <hr></hr>
         <Container fluid="md">
             <h5>Reviews from past clients:</h5>
+            <script src="https://cdn1.weddingwire.ca/js/wp-widget.js?nossl-sf-sui-20191031-02CA1067142-1_www_m_"></script>
         </Container>
     </Layout>
 )

@@ -32,7 +32,7 @@ const FirstGallery = () => {
         <div className="image-container">
             <div className="image-grid">
                 {data.fotos.edges.map((foto, key) => (
-                    <GatsbyImage image={foto.node.childImageSharp.full} alt={foto.node.name} key={key}/>
+                    <GatsbyImage image={foto.node.childImageSharp.full} alt={foto.node.name} key={key} className="image-item"/>
                 ))}
             </div>
         </div>
