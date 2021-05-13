@@ -1,9 +1,9 @@
 import React from "react"
-
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { Container } from "react-bootstrap"
-
+import { StaticImage } from "gatsby-plugin-image"
+import { Helmet } from "react-helmet"
 
 const Contact = () => (
     <Layout>
@@ -25,7 +25,7 @@ const Contact = () => (
                     <label>Your Email: <input type="email" name="email" placeholder="youremail@email.com" required /></label>
                 </p>
                 <p>
-                    <label>Your phone: <input type="tel" name="phone_number" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="123-456-6789" /></label>   
+                    <label>Your phone: <input type="tel" name="phone_number" placeholder="123-456-6789" /></label>   
                 </p>
                 <p>
                     <label>Your Event: <select name="typeOfEvent[]" multiple required>
@@ -73,8 +73,15 @@ const Contact = () => (
         <hr></hr>
         <Container fluid="md">
             <h5>Reviews from past clients:</h5>
-            <script src="https://cdn1.weddingwire.ca/js/wp-widget.js?nossl-sf-sui-20191031-02CA1067142-1_www_m_"></script>
+            <a href="https://www.weddingwire.ca/wedding-photography/otavio-photo--e56457" rel="noreferrer" target="_blank">
+            <StaticImage src="../images/WeddingWire-ClientReviews-Otavio.png" alt="WeddingWire - Clients Reviews"></StaticImage></a>
+            <p>You can also book me through: <a href="https://www.weddingwire.ca/wedding-photography/otavio-photo--e56457" rel="noreferrer" target="_blank"><img src="https://cdn1.weddingwire.ca/assets/img/logos/gen_logoHeader.svg" height="20" alt="WeddingWire Logo"/></a></p>
+            
+            <a href="https://www.gigsalad.com/otavio_photo_boston" rel="noreferrer" target="_blank">
+            <StaticImage src="../images/GigSalad-ClientReviews-Otavio.png" alt="GigSalad - Clients Reviews"></StaticImage></a>
+            <p>You can also book me through: <a href="https://www.gigsalad.com/otavio_photo_boston" rel="noreferrer" target="_blank"><img src="https://cress.gigsalad.com/images/svg/standalone/promokit-links/book-securely/book-securely.svg" alt="Hire me on GigSalad" height="70" width="210" /></a></p>
         </Container>
+        <br></br>
     </Layout>
 )
 export default Contact

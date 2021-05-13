@@ -18,6 +18,7 @@ body {
   -ms-font-feature-settings: "kern", "liga", "clig", "calt";
   -webkit-font-feature-settings: "kern", "liga", "clig", "calt";
   font-feature-settings: "kern", "liga", "clig", "calt";
+  text-align: justify;
 }
 article,
 aside,
@@ -598,6 +599,7 @@ pre tt:after {
 @media only screen and (max-width: 480px) {
   html {
     font-size: 100%;
+    text-align: justify;
   }
 }
 /* TODO MEDIA FOR MENU */

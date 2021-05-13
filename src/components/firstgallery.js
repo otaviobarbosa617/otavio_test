@@ -39,10 +39,5 @@ const FirstGallery = () => {
     )
 }
 
-// {data.fotos.edges.map(foto => (
-//     <div key={ foto.node.id }>
-//       <p><GatsbyImage image={foto.node.childImageSharp.full} alt={foto.node.name}/></p>
-//     </div>
-//   ))}
 
 export default FirstGallery
