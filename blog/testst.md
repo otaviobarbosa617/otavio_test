@@ -1,5 +1,5 @@
 ---
-path: /blog/test
+path: /src/pages/postest
 date: 2021-08-09T19:51:06.168Z
 title: Testst
 ---
