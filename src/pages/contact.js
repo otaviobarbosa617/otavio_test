@@ -3,7 +3,6 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { Container } from "react-bootstrap"
 import { StaticImage } from "gatsby-plugin-image"
-import { Helmet } from "react-helmet"
 
 const Contact = () => (
     <Layout>
@@ -87,5 +86,5 @@ const Contact = () => (
 export default Contact
 
 const emailAlert = () => {
-    alert("Hey, let me tell you that I don't give quotes when you shoot me a direct email or text or call, please use the contact form on top of this page");
+    alert("Hey, let me tell you that I don't give quotes when you shoot me a direct email or text or call, please use the contact form on top of this page.");
 }
