@@ -17,7 +17,7 @@ const BlogPage = ({data}) => (
             <br></br>
             <h4>{post.node.frontmatter.title}</h4>
             <p>{post.node.frontmatter.date}</p>
-            <p><StaticImage image={post.node.frontmatter.featuredimage} alt={post.node.frontmatter.title}> </StaticImage></p>
+            {/* <p><StaticImage image={post.node.frontmatter.featuredimage} alt={post.node.frontmatter.title}> </StaticImage></p> */}
             <Link to={post.node.frontmatter.path}>Read More</Link>
         </div>
     ))}
