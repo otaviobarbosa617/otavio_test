@@ -4,18 +4,20 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { graphql } from 'gatsby'
 import { Container } from "react-bootstrap"
-
+import {GatsbyImage, StaticImage} from "gatsby-plugin-image"
 
 const BlogPage = ({data}) => (
   <Layout>
     <SEO title="Blog" /> 
     <Container>
-    <h1>Latest Posts</h1>
+    <h4>Latest Posts</h4>
+    <hr></hr>
     {data.allMarkdownRemark.edges.map(post => (
         <div key={ post.node.id }>
             <br></br>
-            <h3>{post.node.frontmatter.title}</h3>
-            <p>Post by {post.node.frontmatter.author} on {post.node.frontmatter.date}</p>
+            <h4>{post.node.frontmatter.title}</h4>
+            <p>{post.node.frontmatter.date}</p>
+            <p><StaticImage image={post.node.frontmatter.featuredimage} alt={post.node.frontmatter.title}> </StaticImage></p>
             <Link to={post.node.frontmatter.path}>Read More</Link>
         </div>
     ))}
@@ -34,6 +36,7 @@ export const pageQuery = graphql`
                             title
                             date
                             author
+                            featuredimage
                         }
                     }
                 }
