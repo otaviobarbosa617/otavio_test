@@ -1,7 +1,8 @@
 ---
 templateKey: blog-post
+path: "/blog/testnovo-7pm"
 title: Teste novo - 7pm
-date: 2021-08-09T23:33:37.539Z
+date: "2021-08-09"
 description: Esse é um teste de descrição
 featuredimage: /images/img_20190423_132115_262.jpg
 author: Otavio Barbosa

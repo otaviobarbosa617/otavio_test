@@ -15,7 +15,13 @@ export default function Template({data}) {
                 <div>
                     <div dangerouslySetInnerHTML={{ __html: post.html }} />
                     <p>All photos by <b>{post.frontmatter.author}</b> on {post.frontmatter.date}</p>
+                    <div>
+                    {post.frontmatter.tags.map(tag =>
+                        <small>{tag}, </small> 
+                    )}
+                    </div>
                 </div>
+                <br></br>
                 <Link to="/blog">Go Back</Link>
             </Container>
         </Layout>
@@ -31,6 +37,8 @@ export const PostQuery = graphql`
                 title
                 author
                 date
+                tags
+                featuredimage
             }
         }
     }

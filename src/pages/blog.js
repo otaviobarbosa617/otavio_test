@@ -4,7 +4,6 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { graphql } from 'gatsby'
 import { Container } from "react-bootstrap"
-import {GatsbyImage, StaticImage} from "gatsby-plugin-image"
 
 const BlogPage = ({data}) => (
   <Layout>
