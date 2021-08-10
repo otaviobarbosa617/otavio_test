@@ -9,22 +9,22 @@ export default function Template({data}) {
 
     return(
         <Layout>
-            <Container>  
+            <Container fluid="md">
+                <h4>{post.frontmatter.title}</h4>
+                <hr></hr>
                 <div>
-                    <h4>{post.frontmatter.title}</h4>
-                    <hr></hr>
                     <div dangerouslySetInnerHTML={{ __html: post.html }} />
-                    <p>Post by <b>{post.frontmatter.author}</b> on {post.frontmatter.date}</p>
-                    <Link to="/blog">Go Back</Link>
+                    <p>All photos by <b>{post.frontmatter.author}</b> on {post.frontmatter.date}</p>
                 </div>
+                <Link to="/blog">Go Back</Link>
             </Container>
         </Layout>
     )
 }
 
 export const PostQuery = graphql`
-    query BlogPostByPath($path: String!) {
-        markdownRemark(frontmatter: { path: { eq: $path } }){
+    query BlogPostByPath {
+        markdownRemark {
             html
             frontmatter {
                 path
@@ -35,3 +35,17 @@ export const PostQuery = graphql`
         }
     }
 `
+
+// export const PostQuery = graphql`
+//     query BlogPostByPath($path: String!) {
+//         markdownRemark(frontmatter: { path: { eq: $path } }){
+//             html
+//             frontmatter {
+//                 path
+//                 title
+//                 author
+//                 date
+//             }
+//         }
+//     }
+// `

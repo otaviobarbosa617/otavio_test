@@ -9,16 +9,15 @@ import {GatsbyImage, StaticImage} from "gatsby-plugin-image"
 const BlogPage = ({data}) => (
   <Layout>
     <SEO title="Blog" /> 
-    <Container>
+    <Container fluid="md">
     <h4>Latest Posts</h4>
     <hr></hr>
     {data.allMarkdownRemark.edges.map(post => (
         <div key={ post.node.id }>
-            <br></br>
             <h4>{post.node.frontmatter.title}</h4>
             <p>{post.node.frontmatter.date}</p>
-            {/* <p><StaticImage image={post.node.frontmatter.featuredimage} alt={post.node.frontmatter.title}> </StaticImage></p> */}
             <Link to={post.node.frontmatter.path}>Read More</Link>
+            
         </div>
     ))}
     </Container> 

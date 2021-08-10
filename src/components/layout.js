@@ -29,6 +29,7 @@ const Layout = ({ children }) => {
       <Container fluid="md">
         <main>{children}</main>
         <Container>
+        <hr></hr>
         <footer>
           © {new Date().getFullYear()}, Built by <a href="https://github.com/otaviobarbosa617">Otavio</a> using
           {` `}
