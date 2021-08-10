@@ -3,7 +3,7 @@ backend:
   repo: otaviobarbosa617/otavio_test
   branch: master
 
-media_folder: /static/images/uploads
+media_folder: static/images
 public_folder: /images
 
 collections:
